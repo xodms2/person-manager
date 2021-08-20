@@ -6,4 +6,4 @@ app.use(cors());
 app.use(express.json(), express.urlencoded({ extended: true }));
 require("./routes/person.routes")(app);
 
-app.listen(8000, () => "listening at port 8000");
+app.listen(8000, () => console.log("Listening on port: 8000"));
